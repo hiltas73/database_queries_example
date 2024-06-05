@@ -1,7 +1,7 @@
-package com.example.day1;
+package com.example.jdbc.day1;
 
 public class D01_SQLIntro {
 
-    
+
 
 }
