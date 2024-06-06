@@ -52,7 +52,7 @@ ORDER BY count(*) DESC;
 SELECT LOCATION_ID, COUNT(*)
 FROM DEPARTMENTS
 GROUP BY LOCATION_ID
-ORDER BY 2 ASC;
+ORDER BY 2 ASC; -- order by 2nd column ASC
 
 --display how many countries we have in each regions
 SELECT REGION_ID,COUNT(*) FROM COUNTRIES
@@ -61,7 +61,7 @@ GROUP BY REGION_ID;
 --order them based on number of countries in desc
 SELECT REGION_ID,COUNT(*) FROM COUNTRIES
 GROUP BY REGION_ID
-ORDER BY 2 DESC;
+ORDER BY 2 DESC; -- order by 2nd column DESC
 
 SELECT REGION_ID,COUNT(*) FROM COUNTRIES
 GROUP BY REGION_ID
