@@ -38,9 +38,9 @@ public class DB_Util {
      */
     public static void createConnection(){
 
-        String url      = "jdbc:oracle:super_secret"; ;
-        String username = "secret" ;
-        String password = "secret" ;
+        String url      = "jdbc:oracle:thin:@0.00.000.00:0000:XE"; ;
+        String username = "hr" ;
+        String password = "hr" ;
 
         createConnection(url, username, password);
 

@@ -24,23 +24,23 @@ public class D02_DBUtilPractice {
         System.out.println(DB_Util.getAllColumnNamesAsList());
 
         System.out.println("====GET ME ALL FIRST NAMES===");
-        System.out.println(DB_Util.getColumnDataAsList(1));
+        //System.out.println(DB_Util.getColumnDataAsList(1));
 
         System.out.println("====GET ME HOW MANY ROWS WE HAVE===");
-        System.out.println(DB_Util.getRowCount());
+        //System.out.println(DB_Util.getRowCount());
 
         System.out.println("====GET ME CERTAIN ROW INFO===");
         System.out.println("===GET ME AS MAP===");
-        System.out.println(DB_Util.getRowMap(1));
+        //System.out.println(DB_Util.getRowMap(1));
         System.out.println("===GET ME AS LIST===");
-        System.out.println(DB_Util.getRowDataAsList(2));
+        //System.out.println(DB_Util.getRowDataAsList(2));
         System.out.println("===GET ME ALL DATA AS A LIST OF MAP ===");
 
-        List<Map<String, String>> allRowAsListOfMap = DB_Util.getAllRowAsListOfMap();
-
-        for (Map<String, String> rowMap : allRowAsListOfMap) {
-            System.out.println(rowMap);
-        }
+//        List<Map<String, String>> allRowAsListOfMap = DB_Util.getAllRowAsListOfMap();
+//
+//        for (Map<String, String> rowMap : allRowAsListOfMap) {
+//            System.out.println(rowMap);
+//        }
 
 
         //close the connection
