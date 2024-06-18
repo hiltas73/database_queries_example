@@ -155,6 +155,29 @@ public class DB_Util {
     }
 
     /**
+     * getting the cell value according to row num and column index
+     * @param rowNum  row number to get the data from
+     * @param columnIndex column number to get the data from
+     * @return the value in String at that location
+     */
+    public static String getCellValue(int rowNum , int columnIndex) {
+
+        String cellValue = "" ;
+
+        try {
+            rs.absolute(rowNum) ;
+            cellValue = rs.getString(columnIndex ) ;
+
+        } catch (Exception e) {
+            System.out.println("ERROR OCCURRED WHILE getCellValue " + e.getMessage() );
+        }finally {
+            resetCursor();
+        }
+        return cellValue ;
+
+    }
+
+    /**
      * This method will reset the cursor to before first location
      */
     private static void resetCursor(){
