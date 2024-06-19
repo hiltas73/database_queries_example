@@ -30,6 +30,7 @@ select * from employees;
 select department_name from departments;
 
 -- SQL language is case insensitive
+-- depends on DB, tableName, columnName case sensitivity may change
 SELECT department_name FROM departments;
 SELECT department_name fRoM departments;
 
